@@ -1,0 +1,41 @@
+.diary-modal {
+  border: none;
+  width: 100%;
+  padding: 0 40px 0 40px;
+  overflow-x: hidden;
+  max-width: 500px;
+  max-height: 500px;
+  min-height: 500px;
+  border-radius: 6px;
+  box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 80px 0 rgba(0, 0, 0, 0.19);
+}
+
+.diary-modal p {
+  width: 100%;
+}
+
+.diary-modal-header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  position: sticky;
+  height: fit-content;
+  padding-top: 20px;
+}
+
+.diary-modal-header button {
+  border: none;
+  height: fit-content;
+  background-color: white;
+}
+
+
+@media (min-width:200px) and (max-width:800px) {
+  .diary-modal {
+    width: 90%;
+    padding: 15px;
+  }
+}

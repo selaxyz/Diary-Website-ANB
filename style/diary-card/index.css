@@ -1,0 +1,47 @@
+#diary-list {
+    max-width: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 8px;
+}
+
+.diary-card {
+    background-color: white;
+    padding: 14px;
+    border-radius: 6px;
+    border: solid 1px grey;
+    grid-column: span 4;
+}
+
+.diary-card .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.diary-card h2 {
+    color: black;
+    font-size: 18px;
+}
+
+.action {
+    display: flex;
+    gap: 10px;
+}
+
+.content .summary :last-child {
+    line-height: 0px;
+    font-size: 13px;
+}
+
+.content-bottom {
+    padding-top: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+@media (min-width:200px) and (max-width:800px) {
+    .diary-card {
+        grid-column: span 12;
+    }
+}

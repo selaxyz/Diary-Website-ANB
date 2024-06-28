@@ -1,0 +1,13 @@
+.diary-heading {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .diary-heading h1 {
+    line-height: 0px;
+  }
+  .diary-heading p {
+    font-size: 13px;
+  }

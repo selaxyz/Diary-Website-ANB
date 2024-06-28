@@ -1,0 +1,52 @@
+.diary-form {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 5px;
+}
+
+.diary-input {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  grid-column: span 10;
+}
+
+.diary-input div {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: 50%;
+}
+
+.diary-input div input {
+  height: 100%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.diary-input textarea {
+  height: 100px;
+  width: 50%;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+@media (min-width:200px) and (max-width:800px) {
+  .diary-input {
+    grid-column: span 12;
+    flex-direction: column;
+  }
+  .diary-input div {
+    width: 100%;
+    height: 100px;
+  }
+
+  .diary-input textarea {
+    width: auto;
+  }
+  
+  
+}

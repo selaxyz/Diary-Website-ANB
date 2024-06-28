@@ -1,0 +1,27 @@
+.diary-manual {
+    position: relative;
+    height: fit-content;
+  }
+  
+  .manual-popover {
+    display: none;
+  }
+  
+  .manual-popover-display {
+    padding: 8px;
+    position: absolute;
+    background-color: white;
+    right: 0px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .manual-popover-display p {
+    border: none;
+    background-color: white;
+    color: red;
+  }
+  

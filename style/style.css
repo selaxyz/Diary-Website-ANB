@@ -1,0 +1,69 @@
+@import url(./footer/index.css);
+@import url(./header/index.css);
+@import url(./diary-heading/index.css);
+@import url(./diary-card/index.css);
+@import url(./diary-modal/index.css);
+@import url(./diary-form/index.css);
+@import url(./diary-manual/index.css);
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  height: 100vh;
+}
+
+hr {
+  max-width: 1000px;
+  width: 100%;
+}
+
+#update {
+  display: none;
+  border: none;
+  grid-column: span 2;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  height: fit-content;
+  border-radius: 5px;
+  color: white;
+  background-color: teal;
+}
+
+#submit {
+  border: none;
+  grid-column: span 2;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  height: fit-content;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+#detail {
+  border: none;
+  border-radius: 30px;
+  padding: 8px 15px 8px 15px;
+  color: grey;
+}
+
+.empty-section {
+  height: 150px;
+}
+
+@media (min-width:200px) and (max-width:800px) {
+  #submit{
+    grid-column: span 12;
+  }
+  #update{
+    grid-column: span 12;
+  }
+  
+}
