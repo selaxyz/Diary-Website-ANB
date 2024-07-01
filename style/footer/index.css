@@ -4,9 +4,7 @@
     bottom: 0;
     width: 100%;
     text-align: center;
-    font-size: 12px;
-    background-color: black;
-    border-top: 1px solid grey;
-    border-color: grey;
-    color: white;
+    font-size: var(--body-extra-small-regular);
+    background-color: var(--primary);
+    color: var(--white);
   }

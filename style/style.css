@@ -6,6 +6,42 @@
 @import url(./diary-form/index.css);
 @import url(./diary-manual/index.css);
 
+:root {
+  --primary: #060B13;
+  --secondary: #137674;
+
+  --dark2: #1F2A37;
+  --dark3: #374151;
+  --dark4: #4B5563;
+  --dark5: #6B7280;
+
+  --white: #FFFFFF;
+
+  --teal: #06A09B;
+  --teal-light: #C2F5E9;
+
+  --red: #E2111C;
+
+  --gray1: #F9FAFB;
+  --gray2: #E5E7EB;
+  --gray3: #F3F4F6;
+  --gray4: #DEE2E6;
+  --gray5: #CED4DA;
+
+  --shadow4: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --shadow5:  0 4px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 80px 0 rgba(0, 0, 0, 0.19);
+
+  --heading1: 50px;
+  --heading2: 30px;
+  --heading5: 26px;
+
+  --body-small-regular: 14px;
+  --body-extra-small-regular: 12px;
+
+
+}
+
+
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,6 +53,9 @@ body {
   gap: 10px;
   position: relative;
   height: 100vh;
+  background-image: url('../assets/images/web-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 hr {
@@ -32,8 +71,8 @@ hr {
   padding-bottom: 18px;
   height: fit-content;
   border-radius: 5px;
-  color: white;
-  background-color: teal;
+  color: var(--white);
+  background-color: var(--secondary);
 }
 
 #submit {
@@ -43,15 +82,15 @@ hr {
   padding-bottom: 18px;
   height: fit-content;
   border-radius: 5px;
-  color: white;
-  background-color: black;
+  color: var(--white);
+  background-color: var(--primary);
 }
 
 #detail {
   border: none;
   border-radius: 30px;
   padding: 8px 15px 8px 15px;
-  color: grey;
+  color: var(--dark5);
 }
 
 .empty-section {
@@ -59,11 +98,12 @@ hr {
 }
 
 @media (min-width:200px) and (max-width:800px) {
-  #submit{
+  #submit {
     grid-column: span 12;
   }
-  #update{
+
+  #update {
     grid-column: span 12;
   }
-  
+
 }
