@@ -6,11 +6,29 @@
     gap: 8px;
 }
 
+.diary-list-empty {
+    background-color:var(--gray1);
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 280px;
+    border-radius: 10px;
+    border: solid 2px var(--gray4);
+    border-style: dashed;
+}
+
+.diary-list-empty p{
+    font-size: var(--body-small-regular);
+    color:gray;
+}
+
 .diary-card {
-    background-color: white;
+    background-color: var(--white);
     padding: 14px;
     border-radius: 6px;
-    border: solid 1px grey;
+    border: solid 2px var(--gray3);
     grid-column: span 4;
 }
 
@@ -20,7 +38,7 @@
 }
 
 .diary-card h2 {
-    color: black;
+    color: var(--primary);
     font-size: 18px;
 }
 
@@ -29,9 +47,13 @@
     gap: 10px;
 }
 
+.action div {
+    height: fit-content;
+}
+
 .content .summary :last-child {
     line-height: 0px;
-    font-size: 13px;
+    font-size: var(--body-small-regular);
 }
 
 .content-bottom {
