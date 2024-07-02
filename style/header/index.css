@@ -1,18 +1,36 @@
+/* Styling for the header component */
+
 .header {
+  /* Set the background image, size, and margin */
   background-image: url("../../assets/images/header-image.jpg");
   background-size: cover;
   margin-top: 10px;
+
+  /* Set the width and height */
   width: 100%;
   height: 230px;
+
+  /* Set the minimum and maximum width */
   min-height: 300px;
   max-width: 1200px;
+
+  /* Set the border radius */
   border-radius: 12px;
+
+  /* Center content vertically and horizontally */
   align-content: center;
   text-align: center;
+
+  /* Set the text color */
   color: var(--white);
 }
 
+/* Style the h1 element inside the header */
 .header h1 {
+  /* Set the font size */
   font-size: var(--heading1);
+
+  /* Set the line height */
   line-height: 35px;
 }
+

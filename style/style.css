@@ -1,3 +1,4 @@
+/* Import all the styles from the other components */
 @import url(./footer/index.css);
 @import url(./header/index.css);
 @import url(./diary-heading/index.css);
@@ -5,7 +6,9 @@
 @import url(./diary-modal/index.css);
 @import url(./diary-form/index.css);
 @import url(./diary-manual/index.css);
+@import url(./diary-confirm-delete-modal/index.css);
 
+/* Define the variables for colors and other design elements */
 :root {
   --primary: #060B13;
   --secondary: #137674;
@@ -31,21 +34,21 @@
   --shadow4: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --shadow5:  0 4px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 80px 0 rgba(0, 0, 0, 0.19);
 
-  --heading1: 50px;
+  --heading1: max( 2.2vw, 20px);
   --heading2: 30px;
   --heading5: 26px;
 
   --body-small-regular: 14px;
   --body-extra-small-regular: 12px;
 
-
 }
 
-
+/* Set the font family for all elements */
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Set the body style, including flexbox and background image */
 body {
   display: flex;
   flex-direction: column;
@@ -58,11 +61,16 @@ body {
   background-size: cover;
 }
 
+/* Set the style for the horizontal line */
 hr {
   max-width: 1000px;
   width: 100%;
+  height: 1px;
+  border: none;
+  background-color: var(--gray5)
 }
 
+/* Set the style for the submit and update buttons */
 #update {
   display: none;
   border: none;
@@ -86,6 +94,7 @@ hr {
   background-color: var(--primary);
 }
 
+/* Set the style for the detail button */
 #detail {
   border: none;
   border-radius: 30px;
@@ -93,10 +102,12 @@ hr {
   color: var(--dark5);
 }
 
-.empty-section {
-  height: 150px;
+/* Set the style for the empty section */
+.empty-section{
+  height: 100vw;
 }
 
+/* Set the style for the submit and update buttons on small screens */
 @media (min-width:200px) and (max-width:800px) {
   #submit {
     grid-column: span 12;
@@ -105,5 +116,4 @@ hr {
   #update {
     grid-column: span 12;
   }
-
 }

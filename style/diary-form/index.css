@@ -1,52 +1,66 @@
+/* CSS for the diary form */
+
 .diary-form {
+  /* Set the width and maximum width */
   width: 100%;
   max-width: 1000px;
+
+  /* Use grid layout with 12 columns and 5px gap */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 5px;
 }
 
 .diary-input {
+  /* Use flexbox with row direction and 5px gap */
   display: flex;
   flex-direction: row;
   gap: 5px;
+
+  /* Span 10 columns */
   grid-column: span 10;
 }
 
 .diary-input div {
+  /* Use flexbox with column direction and 5px gap */
   display: flex;
-  gap: 5px;
   flex-direction: column;
+  gap: 5px;
+
+  /* Set the width to 50% */
   width: 50%;
 }
 
 .diary-input div input {
+  /* Set the height, border radius, and padding */
   height: 100%;
   border-radius: 5px;
   padding: 5px;
 }
 
 .diary-input textarea {
+  /* Set the height, border radius, width, and padding */
   height: 100px;
   width: 50%;
   border-radius: 5px;
   padding: 10px;
 }
 
-
+/* Adjust the layout for screens with width less than 800px */
 @media (min-width:200px) and (max-width:800px) {
   .diary-input {
+    /* Span 12 columns and change direction to column */
     grid-column: span 12;
     flex-direction: column;
   }
   .diary-input div {
+    /* Set width to 100% and height to 100px */
     width: 100%;
     height: 100px;
   }
 
   .diary-input textarea {
+    /* Set width to auto */
     width: auto;
   }
-  
-  
 }

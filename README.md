@@ -1,6 +1,6 @@
 # DIARY WEB APPLICATION
 
-This project is designed to help alphabeez team in learning fundamentals of web development and collaboration from sketching, design and development. This project cannot work without the help of the right tool such HTML, CSS, Javascript and CSS Framework like tailwind
+This project is designed to help in learning fundamentals of web development like CRUD Operation and collaboration from sketching, design and development. This project cannot work without the help of the right tool such HTML, CSS, Javascript
 
 > 🎯 Website: <a href="https://sela-diary-website.netlify.app/">Click Here</a>.
 

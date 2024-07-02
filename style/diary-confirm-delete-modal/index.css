@@ -1,0 +1,70 @@
+.diary-confirm-delete-modal {
+    flex-direction: column;
+    overflow: auto;
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--shadow5);
+    overflow: hidden;
+    padding: 20px;
+    height:fit-content;
+    width: 80%;
+    max-width: 320px;
+    align-items: center;
+}
+
+.diary-confirm-delete-modal-close{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.diary-confirm-delete-modal-close button {
+    border: none;
+    height: fit-content;
+    background-color: var(--white);
+}
+
+
+.diary-confirm-delete-modal-header h2 {
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+}
+
+.diary-confirm-modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+
+.diary-confirm-modal-content img {
+    width: 200px;
+    height: 200px;
+    object-fit:scale-down ;
+}
+
+.diary-confirm-modal-content p {
+    font-size: var(--body-small-regular);
+    width: 75%;
+    text-align: center;
+}
+
+.diary-confirm-delete-modal-action {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.diary-confirm-delete-modal-action button {
+    padding: 15px 20px 15px 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+.diary-confirm-delete-modal-action button:nth-child(1) {
+    background-color: var(--red);
+    color: var(--white);
+}

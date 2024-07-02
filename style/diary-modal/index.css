@@ -1,4 +1,7 @@
+/* This CSS class styles the modal that displays the diary entry details. */
+
 .diary-modal {
+  /* Set the border, width, padding, overflow, maximum width, minimum height, border radius, and box shadow. */
   border: none;
   width: 100%;
   padding: 0 40px 0 40px;
@@ -9,20 +12,24 @@
   box-shadow:var(--shadow5);
 }
 
+/* This CSS class styles the close button of the modal. */
 .diary-modal-close{
   width: 100%;
   display: flex;
   justify-content: end;
 }
 
+/* This CSS class styles the close button of the modal. */
 .diary-modal-close button {
+  /* Set the border, height, and background color. */
   border: none;
   height: fit-content;
   background-color: var(--white);
 }
 
-
+/* This CSS class styles the header of the modal. */
 .diary-modal-header {
+  /* Set the background color, top position, width, sticky position, height, and padding. */
   background-color: var(--white);
   top: 0;
   width: 100%;
@@ -31,14 +38,16 @@
   padding-top: 20px;
 }
 
+/* This CSS class styles the title of the modal header. */
 .diary-modal-header div h2{
+  /* Set the font size and width. */
   font-size: var(--heading5);
   width: 75%;
 }
 
-
-
+/* This CSS class styles the content of the modal. */
 .diary-modal-content {
+  /* Set the width, padding, line height, and font size. */
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -46,8 +55,9 @@
   font-size: var( -normal-regular);
 }
 
-
+/* This CSS media query styles the modal when the screen width is between 200px and 800px. */
 @media (min-width:200px) and (max-width:800px) {
+  /* Set the width, padding, and font size. */
   .diary-modal {
     width: 90%;
     padding: 15px;

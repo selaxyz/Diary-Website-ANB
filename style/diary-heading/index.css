@@ -1,3 +1,8 @@
+/* 
+ * Styles for the diary heading section.
+ * This section contains the title and subtitle of the diary.
+ */
+
 .diary-heading {
   width: 100%;
   max-width: 1000px;

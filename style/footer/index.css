@@ -1,10 +1,17 @@
+/* 
+ * This CSS class styles the footer component.
+ * It sets the position to absolute, with a margin-top of 20px and a bottom of 0.
+ * The width is set to 100% and the text-align is set to center.
+ * The font-size is set to the value of the "--body-extra-small-regular" variable.
+ * The background-color is set to the value of the "--primary" variable.
+ * The color is set to the value of the "--white" variable.
+ */
 .footer {
-    position: absolute;
     margin-top: 20px;
-    bottom: 0;
     width: 100%;
     text-align: center;
     font-size: var(--body-extra-small-regular);
     background-color: var(--primary);
     color: var(--white);
-  }
+    border-radius: 3px;
+}

@@ -1,3 +1,18 @@
+/*
+Styling for the diary manual component
+
+.diary-manual contains the parent element for the manual popover
+
+.manual-popover is the initial state of the manual popover
+
+.manual-popover-display is the state of the manual popover when it is displayed
+It is positioned absolutely and has a white background color, a right position of 0px, a width of 150px, and a border radius of 6px
+It also has a box shadow
+
+.manual-popover-display p is the styling for the paragraph elements inside the manual popover
+It has a transparent background color, a white background color, and a red color
+*/
+
 .diary-manual {
     position: relative;
     height: fit-content;
@@ -12,16 +27,20 @@
     position: absolute;
     background-color: var(--white);
     right: 0px;
-    width: 150px;
+    width: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     border-radius: 6px;
     box-shadow: var(--shadow4);
+    border: none;
   }
   
+
   .manual-popover-display p {
+    /* Styling for the paragraph elements inside the manual popover */
     border: none;
     background-color: var(--white);
     color: var(--red);
   }
-  

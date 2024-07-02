@@ -1,52 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="icon" type="image/x-icon" href="./assets/images/fav.ico">
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/fav.ico" />
     <title>Sela | Diary Website</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <modal-component></modal-component>
+    <!-- Header component -->
     <header-component></header-component>
+    <!-- Section for diary heading -->
     <section class="diary-heading">
-        <div>
-            <h1>@New Diary</h1>
-            <p>Let’s record your special moment</p>
-        </div>
-        <div class="diary-manual">
-            <img onclick="displayManual()" src="./assets/icons/dot.svg">
-            <div onclick="{clearAll() ; displayManual()}" class="manual-popover">
-                <p>Delete Everything</p>
-                <img src="../assets/icons/delete-icon.svg">
-            </div>
-        </div>
+      <div>
+        <h1>@New Diary</h1>
+        <p>Let’s record your special moment</p>
+      </div>
+      <div class="diary-manual">
+        <img onclick="displayManual()" src="./assets/icons/dot.svg" />
+        <button popovertarget="delete-all" class="manual-popover">
+            <p>Delete Everything</p>
+            <img src="../assets/icons/delete-icon.svg" />
+        </button>
+      </div>
     </section>
+    <!-- Section for diary form input -->
     <div class="diary-form">
-        <div class="diary-input">
-            <div>
-                <input id="title" placeholder="My awesom title...">
-                <input type="date" id="date">
-            </div>
-            <textarea id="content" placeholder="Write your amazing story here..."></textarea>
-        </div>
-        <button onclick="addNewDiary()" id="submit">Save</button>
-        <button id="update">Update</button>
-    </div>
-    <hr>
-    <section class="diary-heading">
+      <div class="diary-input">
         <div>
-            <h1>😎 Your diary</h1>
-            <p id="diary-item"></p>
+          <input id="title" placeholder="My awesom journey..." />
+          <input type="date" id="date" />
         </div>
+        <textarea
+          id="content"
+          placeholder="Write your amazing story here..."
+        ></textarea>
+      </div>
+      <button onclick="addNewDiary()" id="submit">Save</button>
+      <button id="update">Update</button>
+    </div>
+    <hr />
+    <!-- Section for displaying user's diaries -->
+    <section class="diary-heading">
+      <div>
+        <h1>😎 Your diary</h1>
+        <p id="diary-item"></p>
+      </div>
     </section>
+    <!-- Section for displaying diaries list -->
     <section id="diary-list"></section>
+    <!-- Empty section -->
     <section class="empty-section"></section>
-    <footer-component></footer-component>   
+    <!-- Footer component -->
+    <footer-component></footer-component>
     <script src="./script/index.js"></script>
     <script src="./components/index.js" type="module"></script>
-</body>
-
+  </body>
 </html>
