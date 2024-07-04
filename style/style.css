@@ -118,10 +118,8 @@ hr {
   }
 }
 
-input[type="date"]
-{
-    display:block;
-    -webkit-appearance: textfield;
-    -moz-appearance: textfield;
-    min-height: 1.2em;
+input[type="date"] {
+  min-width:95.6%;
+  -webkit-appearance : none;
+  min-height: calc(var(--lwc-heightInput,1.200rem) + (1px * 2) + 24px) !important;
 }
